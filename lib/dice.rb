@@ -22,7 +22,7 @@ class Dice
   end
 
   def view_current_score
-    puts "Current score: #{@record.sum}"
+    @record.sum
   end
 
   def view_history

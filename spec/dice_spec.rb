@@ -16,7 +16,7 @@ describe Dice do
     end
   end
 
-  describe '#record' do
+  describe '#view_history' do
     it "records each dice roll" do
       dice = Dice.new
       check = dice.roll(1)
@@ -24,6 +24,13 @@ describe Dice do
     end
   end
 
+  describe '#view_current_score' do
+    it "gets user's current score" do
+      dice = Dice.new
+      check = dice.roll
+      expect(dice.view_current_score).to eq check
+    end
+  end
 end
 
 
